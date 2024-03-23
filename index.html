@@ -1,13 +1,137 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>Hello, World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextX Browser</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        .navbar {
+            background-color: #fff; /* Pure white */
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar img {
+            height: 30px;
+            width: auto;
+        }
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+        .navbar ul li {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .apps-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .app {
+            margin: 10px;
+            text-align: center;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .app:hover {
+            transform: translateY(-5px);
+        }
+        .app img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        .search-bar {
+            text-align: center;
+            margin-top: 20px;
+            position: relative;
+        }
+        .search-bar input {
+            padding: 10px 40px 10px 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            font-size: 16px;
+        }
+        .search-bar input:focus {
+            outline: none;
+            border-color: #333;
+        }
+        .search-icon {
+            position: absolute;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+        .light-mode-button {
+            cursor: pointer;
+        }
+        .dark-mode {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-  <h1>
-    Hello, World! x here 
-  </h1>
+    <div class="navbar">
+        <img src="textx_logo.png" alt="TextX Logo">
+        <ul>
+            <li>Home</li>
+            <li>History</li>
+            <li class="light-mode-button" onclick="toggleDarkMode()">🌙</li>
+        </ul>
+    </div>
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <span class="search-icon">🔍</span>
+    </div>
+    <div class="apps-container">
+        <div class="app">
+            <img src="x.png" alt="X Icon">
+        </div>
+        <div class="app">
+            <img src="gpt.png" alt="ChatGPT Icon">
+        </div>
+        <div class="app">
+            <img src="what.png" alt="WhatsApp Icon">
+        </div>
+        <div class="app">
+            <img src="github.png" alt="GitHub Icon">
+        </div>
+        <div class="app">
+            <img src="discord.png" alt="Discord Icon">
+        </div>
+        <div class="app">
+            <img src="spotify.png" alt="Spotify Icon">
+        </div>
+        <div class="app">
+            <img src="insta.png" alt="Instagram Icon">
+        </div>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
