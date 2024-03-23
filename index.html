@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLAMAS-2</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 9em;
+            margin: 10px 0;
+        }
+        h2 {
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        img {
+            margin-right: 10px;
+            height: 200px; /* Adjust the height as needed */
+        }
+        .divider {
+            border-top: 2px solid #fff;
+            margin: 40px auto; /* Increased margin for more space */
+            width: 80%;
+        }
+        .welcome-content {
+            margin-bottom: 80px; /* Increased margin for more space */
+        }
+        .capabilities {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f8f8f8;
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            color: #000; /* Changed font color to black */
+        }
+        .capabilities h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .capability-box {
+            background-color: #e9ecef;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        .capability-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .how-it-works {
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #000; /* Changed background color to black */
+            border-radius: 10px;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Changed font color to white */
+        }
+        .how-it-works h2 {
+            color: #fff; /* Changed font color to white */
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .how-it-works p {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px; /* Added margin-bottom for better spacing */
+        }
+        .how-it-works img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .chat {
+            background-color: #000;
+            color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .chat .message {
+            margin-bottom: 10px;
+        }
+        .chat .message.user .avatar {
+            float: left;
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .chat .message.ai .avatar {
+            float: right;
+            margin-left: 10px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .chat .message.user .text {
+            background-color: #444;
+            padding: 10px;
+            border-radius: 10px;
+            clear: both;
+            float: left;
+            max-width: 70%;
+        }
+        .chat .message.ai .text {
+            background-color: #666;
+            padding: 10px;
+            border-radius: 10px;
+            clear: both;
+            float: right;
+            max-width: 70%;
+        }
+  
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th, .comparison-table td {
+    border: 2px solid #000;
+    padding: 16px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+
+.comparison-table th {
+    background-color: #000;
+    font-weight: bold;
+}
+
+.comparison-table td {
+    background-color: #222;
+}
+
+.comparison-table tr:nth-child(even) {
+    background-color: #333;
+}
+
+.comparison-table tr:hover {
+    background-color: #444;
+}
+    </style>
+</head>
+<body class="css-body">
+<header>
+    <img src="logo1.png" alt="OpenAI Logo">
+    <h2></h2>
+</header>
+<main>
+    <div class="welcome-content">
+        <h1>LLAMAS 2</h1>
+        <p>LLAMAS-2 Your AI coding companion. Powered by GPT-4, LLAMAS-2 transforms your ideas into code with unmatched precision, revolutionizing software development.</p>
+        <img src="main.jpeg" alt="LLAMAS-2 Image" style="height: 400px;">
+    </div>
+  <div class="capabilities">
+        <h2>Capabilities</h2>
+        <div class="capability-box">
+            <p class="capability-title">Generate Code Snippets</p>
+            <p>LLAMAS-2 can generate code snippets for various programming languages.</p>
+        </div>
+    
+    <div class="capability-box">
+        <p class="capability-title">Optimize and Refactor Code</p>
+        <p>LLAMAS-2 can optimize and refactor existing code for improved efficiency.</p>
+    </div>
+    <div class="capability-box">
+        <p class="capability-title">Real-time Assistance</p>
+        <p>LLAMAS-2 provides real-time coding assistance and suggestions.</p>
+    </div>
+    <div class="capability-box">
+        <p class="capability-title">Custom Solutions</p>
+        <p>LLAMAS-2 can create custom solutions tailored to specific project requirements.</p>
+    </div>
+    
+        <div class="capabilities">
+    <h2>GPT4</h2>
+    <table class="comparison-table">
+        <tr>
+            <th>Aspect</th>
+            <th>LLAMAS-2</th>
+            <th>GPT-4</th>
+        </tr>
+        <tr>
+            <td>Specialization</td>
+            <td>Specialized for coding tasks</td>
+            <td>General-purpose AI</td>
+        </tr>
+        <tr>
+            <td>Code Generation</td>
+            <td>Precise code generation and optimization</td>
+            <td>Broader understanding of natural language</td>
+        </tr>
+        <tr>
+            <td>Real-time Assistance</td>
+            <td>Provides real-time coding assistance</td>
+            <td>Offers general-purpose AI capabilities</td>
+        </tr>
+        <tr>
+            <td>Versatility</td>
+            <td>N/A</td>
+            <td>Suitable for a variety of applications beyond coding</td>
+        </tr>
+      <td>Customization</td>
+            <td>Can create custom solutions tailored to project requirements</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>Performance</td>
+            <td>Optimized for software development tasks</td>
+            <td>May not provide specialized performance for coding tasks</td>
+        </tr>
+        <tr>
+            <td>Accuracy</td>
+            <td>High accuracy in code generation and optimization</td>
+            <td>Depends on the complexity of the task and training data</td>
+        </tr>
+        <tr>
+            <td>Training Data</td>
+            <td>Trained on large datasets specific to coding</td>
+            <td>Trained on diverse datasets covering various domains</td>
+        </tr>
+        <tr>
+            <td>Community Support</td>
+            <td>Support from a community of developers and software engineers</td>
+            <td>Widespread adoption and support across multiple industries</td>
+        </tr>
+    </table>
+</div>
+    </table>
+</div>
+        <div class="how-it-works">
+    <h2>How It Works</h2>
+    <p>LLAMAS-2 simplifies the coding process by transforming natural language descriptions into functional code. Heres how it works:</p>
+    <img src="working.jpg" alt="LLAMAS-2 Working Image">
+    <p>1. Input your idea or requirement in natural language.</p>
+    <p>2. LLAMAS-2 analyzes the input and generates code snippets based on the provided information.</p>
+    <p>3. Review the generated code and make any necessary adjustments.</p>
+    <p>4. Incorporate the generated code into your project and iterate as needed.</p>
+</div>
+    </div>
+</main>
+</body>
+</html>
